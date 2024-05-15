@@ -1,0 +1,28 @@
+{
+  "name": "lycra-ai-message-worker",
+  "version": "1.0.0",
+  "description": "The AI worker to ask for details of the user",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qodifynl/lycra-ai-message-worker.git"
+  },
+  "keywords": [
+    "Lycra",
+    "AI"
+  ],
+  "author": "Qodify/ Fifty2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qodifynl/lycra-ai-message-worker/issues"
+  },
+  "homepage": "https://github.com/qodifynl/lycra-ai-message-worker#readme",
+  "dependencies": {
+    "@cloudflare/itty-router-openapi": "^1.1.1",
+    "@cloudflare/workers-types": "^4.20240512.0",
+    "wrangler": "^3.56.0"
+  }
+}
