@@ -1,5 +1,5 @@
 import { OpenAPIRouter } from "@cloudflare/itty-router-openapi";
-
+import { SendMessage } from "./message";
 export const router = OpenAPIRouter({
   schema: {
     info: {
@@ -19,6 +19,8 @@ export const router = OpenAPIRouter({
     logo_url: 'https://tinyai.id/tiny.png',
   },
 })
+
+router.post('/message', SendMessage);
 
 // 404 for everything else
 router.all('*', () => new Response('Not Found.', { status: 404 }))
